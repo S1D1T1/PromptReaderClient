@@ -2,18 +2,9 @@
 
 A lightweight Swift client for integrating [PromptReader](link-to-promptreader) into your macOS application. PromptReader is a floating inspector window that displays AI image generation parameters. This client makes it easy to send images to PromptReader for inspection.
 
-## Features
-
-- Simple API for displaying files in PromptReader
-- Automatic availability checking
-- User preference management
-- SwiftUI support
-
-## Installation
-
-Add PromptReaderClient.swift to your Xcode project. That's all.
 
 ## Basic Usage
+For an image gallery or browser app, PromptReader can float above and display detailed info on the currently selected image. To have PR track the current selection, pass its URL to the PromptReaderClient
 
 ```swift
 // Initialize the client
@@ -24,6 +15,18 @@ func selectionDidChange(_ url: URL) {
     promptReader.inspect(url)
 }
 ```
+
+
+## Features
+
+- Simple API for displaying files in PromptReader
+- Automatic availability checking
+- User preference management
+- SwiftUI support
+
+## Installation
+
+Add PromptReaderClient.swift to your Xcode project. That's all.
 
 ## SwiftUI Integration
 
@@ -42,7 +45,7 @@ Toggle("Show Image Settings in PromptReader", isOn: $callPromptReader)
 ## Requirements
 
 - macOS 10.15 or later
-- PromptReader app installed (available on TestFlight)
+- PromptReader app installed ([available on TestFlight](https://testflight.apple.com/join/ATw6nFGv))
 
 ## License
 
