@@ -15,12 +15,12 @@ func selectionDidChange(_ url: URL) {
     promptReader.inspect(url)
 }
 ```
-
+![Screenshot](images/gallery-hud.jpg)
 
 ## Features
 
 - Simple API for displaying files in PromptReader
-- Automatic availability checking
+- Automatic checks for App availability
 - User preference management
 - SwiftUI support
 
