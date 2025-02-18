@@ -45,7 +45,7 @@ Toggle("Show Image Settings in PromptReader", isOn: $callPromptReader)
 ## Requirements
 
 - macOS 10.15 or later
-- PromptReader app installed ([available on TestFlight](https://testflight.apple.com/join/ATw6nFGv))
+- PromptReader, [available on TestFlight](https://testflight.apple.com/join/ATw6nFGv)
 
 ## License
 
