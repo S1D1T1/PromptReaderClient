@@ -4,7 +4,7 @@ A lightweight Swift client for integrating [PromptReader](link-to-promptreader) 
 
 
 ## Basic Usage
-For an image gallery or browser app, PromptReader can float above and display detailed info on the currently selected image. To have PR track the current selection, pass its URL to the PromptReaderClient
+For an image gallery or browser app, PromptReader can float above and display detailed info on the currently selected image. To have PR track the current selection, pass its URL to the PromptReaderClient object
 
 ```swift
 // Initialize the client
