@@ -1,6 +1,6 @@
 # PromptReaderClient
 
-A lightweight Swift client for integrating [PromptReader](link-to-promptreader) into your macOS application. PromptReader is a floating inspector window that displays AI image generation parameters. This client class makes it easy to send images to PromptReader for inspection.
+A lightweight Swift client for integrating PromptReader into your macOS application. PromptReader is a floating inspector window that displays AI image generation parameters. This client class makes it easy to send images to PromptReader for inspection.
 
 
 ## Basic Usage
