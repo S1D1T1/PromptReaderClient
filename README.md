@@ -1,10 +1,11 @@
 # PromptReaderClient
 
-A lightweight Swift client for integrating PromptReader into your macOS application. PromptReader is a floating inspector window that displays AI image generation parameters. This client class makes it easy to send images to PromptReader for inspection.
+A lightweight Swift class for integrating PromptReader into your macOS application. PromptReader is a floating inspector window that displays AI image generation parameters. This client class makes it easy to send images to PromptReader for inspection.
 
 
 ## Basic Usage
-For an image gallery or browser app, PromptReader can float above and display detailed info on the currently selected image. To have PR track the current selection, pass its URL to the PromptReaderClient object
+First of all, you don't need to do *anything* to have PromptReader run alongside your image app. Users can drag images from your app to PromptReader to get extra info.  
+If you would like PromptReader to *track* the selection in your gallery or browser app, then read on. PromptReader can float above and display detailed info on the currently selected image. To have PR track the current selection, pass its URL to the PromptReaderClient object
 
 ```swift
 // Initialize the client
@@ -30,13 +31,13 @@ Add PromptReaderClient.swift to your Xcode project. That's all.
 
 ## SwiftUI Integration
 
-Add a user preference toggle to your settings:
+We suggest adding a user preference toggle for enabling PR:
 
 ```swift
 @AppStorage("callPromptReader") var callPromptReader = promptReader.isAppInstalled
 
 Toggle("Show Image Settings in PromptReader", isOn: $callPromptReader)
-    .disabled(!promptReader.isAppInstalled)
+    .disabled(!promptReader.isAppInstalled) // only enable the pref if app is installed
     .help(promptReader.isAppInstalled ?
           "Show full image settings using companion app, PromptReader" :
           "PromptReader is not installed")
@@ -44,7 +45,7 @@ Toggle("Show Image Settings in PromptReader", isOn: $callPromptReader)
 
 ## Requirements
 
-- macOS 10.15 or later
+- macOS 14 or later
 - PromptReader, [available on TestFlight](https://testflight.apple.com/join/ATw6nFGv)
 
 ## License
